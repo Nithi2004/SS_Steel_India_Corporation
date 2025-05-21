@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 210 40% 52%; /* Steel Blue */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 214 9.9% 34.9%; /* Steel Gray */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%; /* Steel Red */
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 52%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+  }
+}
+
+/* Custom styles */
+.section-padding {
+  @apply py-16 md:py-24;
+}
+
+.page-container {
+  @apply container mx-auto px-4 md:px-6;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, rgba(26, 58, 95, 0.9), rgba(80, 125, 188, 0.8));
+}
+
+.nav-link {
+  @apply px-3 py-2 text-sm font-medium rounded-md transition-colors duration-200;
+}
+
+.nav-link-active {
+  @apply bg-steelblue-700 text-white;
+}
+
+.nav-link-default {
+  @apply text-steelgray-100 hover:bg-steelblue-600 hover:text-white;
+}
+
+.btn-primary {
+  @apply bg-steelblue-600 hover:bg-steelblue-700 text-white font-medium py-2 px-4 rounded transition-colors duration-200;
+}
+
+.btn-secondary {
+  @apply bg-steelgray-700 hover:bg-steelgray-800 text-white font-medium py-2 px-4 rounded transition-colors duration-200;
+}
+
+.btn-accent {
+  @apply bg-steelred-500 hover:bg-steelred-600 text-white font-medium py-2 px-4 rounded transition-colors duration-200;
+}
+
+.btn-outline {
+  @apply border border-steelblue-500 text-steelblue-500 hover:bg-steelblue-500 hover:text-white font-medium py-2 px-4 rounded transition-colors duration-200;
+}
+
+.card-hover {
+  @apply transition-transform duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+.chatbot-container {
+  @apply fixed bottom-4 right-4 z-50;
+}
+
+.product-card {
+  @apply bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl;
+}
+
+.form-input {
+  @apply mt-1 block w-full rounded-md border-steelgray-300 shadow-sm focus:border-steelblue-500 focus:ring focus:ring-steelblue-200 focus:ring-opacity-50;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-steelgray-700;
+}
