@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -16,7 +15,7 @@ const Contact = () => {
           </p>
         </div>
       </section>
-      
+
       {/* Contact Information */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
@@ -24,7 +23,7 @@ const Contact = () => {
             {/* Contact Details */}
             <div className="lg:col-span-1">
               <h2 className="text-2xl font-bold mb-6 text-steelblue-900">Reach Out to Us</h2>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-steelblue-600 mr-3 mt-1" />
@@ -38,7 +37,7 @@ const Contact = () => {
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <Phone className="h-6 w-6 text-steelblue-600 mr-3 mt-1" />
                   <div>
@@ -47,7 +46,7 @@ const Contact = () => {
                     <p className="text-steelgray-700">+91 87540 10925</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <Mail className="h-6 w-6 text-steelblue-600 mr-3 mt-1" />
                   <div>
@@ -57,7 +56,7 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <Clock className="h-6 w-6 text-steelblue-600 mr-3 mt-1" />
                   <div>
@@ -67,14 +66,14 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-8">
                 <h3 className="font-semibold text-steelgray-900 mb-3">Website</h3>
                 <a href="http://www.sssteelindia.com" target="_blank" rel="noopener noreferrer" className="text-steelblue-600 hover:underline">
                   www.sssteelindia.com
                 </a>
               </div>
-              
+
               <div className="mt-8">
                 <Link to="/enquiry">
                   <Button className="flex items-center">
@@ -84,20 +83,26 @@ const Contact = () => {
                 </Link>
               </div>
             </div>
-            
+
             {/* Google Map Embed */}
             <div className="lg:col-span-2">
-              <div className="h-full bg-steelgray-100 rounded-lg p-4 min-h-[400px] flex items-center justify-center">
-                <div className="text-steelgray-500 text-center p-6">
-                  <h3 className="text-lg font-semibold mb-2">Google Maps Integration</h3>
-                  <p>In a real implementation, an embedded Google Map would be displayed here showing the business location.</p>
-                </div>
+              <div className="h-full rounded-lg overflow-hidden min-h-[400px]">
+                <iframe
+                  title="SS Steel India Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.6463386368297!2d77.78815127482132!3d12.734099190015122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167be52e0c11%3A0xa4b7b9bb46d31be7!2s756%2F6B%2C%20Opp%20Anand%20Electronics%2C%20Krishnagiri%20Main%20Rd%2C%20Hosur%2C%20Tamil%20Nadu%20635109!5e0!3m2!1sen!2sin!4v1684237690289!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
+
       {/* Call to Action */}
       <section className="py-12 bg-steelgray-100">
         <div className="container mx-auto px-4 text-center">
