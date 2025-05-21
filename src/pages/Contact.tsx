@@ -32,9 +32,7 @@ const Contact = () => {
                     <p className="text-steelgray-700">
                       756/6-B, Opp Anand Electronics, Krishnagiri Main Road, Hosur, Tamil Nadu - 635109
                     </p>
-                    <p className="text-steelgray-700 mt-1">
-                      (40 KM from Bengaluru)
-                    </p>
+                    <p className="text-steelgray-700 mt-1">(40 KM from Bengaluru)</p>
                   </div>
                 </div>
 
@@ -69,7 +67,12 @@ const Contact = () => {
 
               <div className="mt-8">
                 <h3 className="font-semibold text-steelgray-900 mb-3">Website</h3>
-                <a href="http://www.sssteelindia.com" target="_blank" rel="noopener noreferrer" className="text-steelblue-600 hover:underline">
+                <a
+                  href="http://www.sssteelindia.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-steelblue-600 hover:underline"
+                >
                   www.sssteelindia.com
                 </a>
               </div>
@@ -88,8 +91,8 @@ const Contact = () => {
             <div className="lg:col-span-2">
               <div className="h-full rounded-lg overflow-hidden min-h-[400px]">
                 <iframe
-                  title="SS Steel India Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.6463386368297!2d77.78815127482132!3d12.734099190015122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167be52e0c11%3A0xa4b7b9bb46d31be7!2s756%2F6B%2C%20Opp%20Anand%20Electronics%2C%20Krishnagiri%20Main%20Rd%2C%20Hosur%2C%20Tamil%20Nadu%20635109!5e0!3m2!1sen!2sin!4v1684237690289!5m2!1sen!2sin"
+                  title="SS Steel India Corporation Location"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.1122569229164!2d77.84498131492313!3d12.729614479007864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae77485baf033d%3A0x2349781ee1d453e6!2sSS%20STEEL%20INDIA%20CORPORATION!5e0!3m2!1sen!2sin!4v1684695467278!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -112,9 +115,7 @@ const Contact = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/products">
-              <Button className="bg-steelblue-600 hover:bg-steelblue-700">
-                Browse Products
-              </Button>
+              <Button className="bg-steelblue-600 hover:bg-steelblue-700">Browse Products</Button>
             </Link>
             <Link to="/register">
               <Button variant="outline" className="border-steelblue-600 text-steelblue-600 hover:bg-steelblue-50">
